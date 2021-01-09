@@ -26,7 +26,7 @@ def start():
     dislikefile.writelines(header)
 
     # account = sys.argv[1]
-    account = '\"fuck\"'
+    account = '\"默认账号名\"'
 
     RETURN_DATE_COL = 0
     REASON_COL =11
@@ -80,6 +80,7 @@ def start():
             dislikefile.writelines(dislike_row)
     defectivefile.close()
     dislikefile.close()
+    resstr.set('数据处理完成，结果保存在目录下的dislike.csv和defective.csv')
 
 
 
@@ -87,7 +88,7 @@ def start():
 window.title('数据处理工具v1.0 - 买家退货分析')
  
 # 第3步，设定窗口的大小(长 * 宽)
-window.geometry('500x300')  # 这里的乘是小x
+window.geometry('600x400')  # 这里的乘是小x
  
 # 第4步，在图形界面上设定标签
 var = tk.StringVar()    # 将label标签的内容设置为字符类型，用var来接收hit_me函数的传出内容用以显示在标签上

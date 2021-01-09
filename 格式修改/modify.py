@@ -67,7 +67,7 @@ def start():
 window.title('数据处理工具v1.0 - 格式修改')
  
 # 第3步，设定窗口的大小(长 * 宽)
-window.geometry('500x300')  # 这里的乘是小x
+window.geometry('500x400')  # 这里的乘是小x
  
 # 第4步，在图形界面上设定标签
 var = tk.StringVar()    # 将label标签的内容设置为字符类型，用var来接收hit_me函数的传出内容用以显示在标签上
