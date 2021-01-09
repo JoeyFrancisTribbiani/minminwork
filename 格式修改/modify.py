@@ -86,7 +86,7 @@ def hit_me():
         var.set('')
  
 # 第5步，在窗口界面设置放置Button按键
-b = tk.Button(window, text='点此按钮选择数据所在目录',bg='black', font=('Arial', 12), width=10, height=5, command=hit_me)
+b = tk.Button(window, text='点此按钮选择数据所在目录', font=('Arial', 12), width=10, height=5, command=hit_me)
 b.pack(fill=X,padx=20,pady=10)
 
 l = tk.Label(window, textvariable=var, bg='gray', fg='white', font=('Arial', 12), width=30, height=2)
