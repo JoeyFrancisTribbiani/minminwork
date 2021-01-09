@@ -1,6 +1,6 @@
-from tkinter import *
 import csv
 import os
+from tkinter import *
 import tkinter.filedialog
 import tkinter as tk  # 使用Tkinter前需要先导入
 
@@ -91,39 +91,3 @@ r.pack(fill=X,padx=20,pady=10)
 
 # 第6步，主窗口循环显示
 window.mainloop()
-
-# path = "."
-
-# writer = csv.writer(resultfile)
-
-# 遍历文件夹
-# for file in files:
-#     # 判断是否是文件夹，是文件夹才打开
-#     if os.path.isdir(file) and not file.startswith('.'):
-#         filelist = os.listdir(file)
-#         for csvfile in filelist:
-#             if (csvfile.startswith('.')):
-#                 continue
-#             # 读取csv至字典
-#             f = open(path+"/"+file+"/"+csvfile, 'r',
-#                      encoding='utf-8', errors='backslashreplace')
-#             reader = csv.reader(f)
-
-#             # 建立空字典
-#             header = []
-#             #reader = csv.DictReader(f)
-#             reader = csv.reader((l.replace('\0', '') for l in f))
-
-#             for item in reader:
-#                 if reader.line_num != 1:
-#                     break
-#                 header.append("账号")
-#                 header.append("日期")
-#                 header.extend(item)
-
-#             f.close()
-#             writer.writerow(header)
-#             headerflag = 1
-#             break
-#     if headerflag == 1:
-#         break
